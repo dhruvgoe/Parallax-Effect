@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container{
+    position:relative;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position:absolute; 
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    z-index:-1;
+}
+
+h1{
+    position: absolute;
+    top:5rem;
+    font-size:10rem;
+    letter-spacing:4px;
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding:5rem 0;
+}
+
+.secHeading{
+    font-size:5rem;
+    padding:0 10rem;
+}
+
+.text{
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:500px;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;   
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateX(-50%);
+    color:black;
+    font-size:3.5rem;
+    font-weight:600;
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="container">
+            <img src="background.png" class="background">
+            <img src="foreground.png" class="foreground">
+            <h1>ADVENTURE</h1>
+        </div>
+
+        <section>
+            <h2 class="secHeading">Adventure Time</h2>
+            <p class="text">
+                Adventure is more than just a journey or travelling from places A to B. It is an extended experience that comes with risks and rewards, unpredictable twists, guaranteed obstacles and surprising results. Basically, adventure is all about change and change is growth which is the core of life.                <br> <br>
+                Like two sides of coin, adventure has its own pros and cons. Many a times, it’s possible that the cons would outnumber the pros – it’s not compulsory though. But, as we know, every situation can be solved with proper planning and taking precautions. As we head for adventure, we should prepare to sail through them smoothly and at the same time be prepared to face any troubles that may come. This is how adventures can be enjoyed to the fullest.            </p>
+
+            <div class="bg bg1">
+                <h2 class="desc">CYCLING</h2>
+            </div>
+            <p class="text">
+                Cycling, also, when on a two-wheeled bicycle, called bicycling or biking, is the use of cycles for transport, recreation, exercise or sport.[1] People engaged in cycling are referred to as "cyclists",[2] "bicyclists",[3] or "bikers".[4] Apart from two-wheeled bicycles, "cycling" also includes the riding of unicycles, tricycles, quadricycles, recumbent and similar human-powered vehicles (HPVs).
+
+                Bicycles were introduced in the 19th century and now number approximately one billion worldwide.[5] They are the principal means of transportation in many parts of the world, especially in densely populated European cities.[6]
+                
+                Cycling is widely regarded as an effective and efficient mode of transportation[7][8] optimal for short to moderate distances.                <br> <br>
+                Bicycles provide numerous possible benefits in comparison with motor vehicles, including the sustained physical exercise involved in cycling, easier parking, increased maneuverability, and access to roads, bike paths and rural trails. Cycling also offers a reduced consumption of fossil fuels, less air and noise pollution, reduced greenhouse gas emissions,[9] and greatly reduced traffic congestion.[10] These have a lower financial cost for users as well as for society at large (negligible damage to roads, less road area required). By fitting bicycle racks on the front of buses, transit agencies can significantly increase the areas they can serve.            </p>
+
+            <div class="bg bg2">
+                <h2 class="desc">PARAGLIDING</h2>
+            </div>
+            <p class="text">
+                Paragliding is the recreational and competitive adventure sport of flying paragliders: lightweight, free-flying, foot-launched glider aircraft with no rigid primary structure.[1] The pilot sits in a harness or lies supine in a cocoon-like 'pod' suspended below a fabric wing. Wing shape is maintained by the suspension lines, the pressure of air entering vents in the front of the wing, and the aerodynamic forces of the air flowing over the outside.                <br> <br>
+                Despite not using an engine, paraglider flights can last many hours and cover many hundreds of kilometres, though flights of one to five hours and covering some tens of kilometres are more the norm. By skillful exploitation of sources of lift, the pilot may gain height, often climbing to altitudes of a few thousand metres.            </p>
+
+            <div class="bg bg3">
+                <h2 class="desc">SURFING</h2>
+            </div>
+            <p class="text">
+                Surfing is a surface water sport in which an individual, a surfer (or two in tandem surfing), uses a board to ride on the forward section, or face, of a moving wave of water, which usually carries the surfer towards the shore. Waves suitable for surfing are primarily found on ocean shores, but can also be found in standing waves in the open ocean, in lakes, in rivers in the form of a tidal bore, or in wave pools.                <br> <br>
+                The term surfing refers to a person riding a wave using a board, regardless of the stance. There are several types of boards. The Moche of Peru would often surf on reed craft, while the native peoples of the Pacific surfed waves on alaia, paipo, and other such water craft. Ancient cultures often surfed on their belly and knees, while the modern-day definition of surfing most often refers to a surfer riding a wave standing on a surfboard; this is also referred to as stand-up surfing.            </p>
+
+
+        </section>
+
+
+    </div>
+</body>
+</html>
